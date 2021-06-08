@@ -12,14 +12,11 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {app.quit()})
 
 function makeServer() {
-
-server = PythonShell.run('main.py', null, function (err) {
-  if (err) throw err;
-  console.log('finished');
+  server = PythonShell.run('main.py', null, function (err) {
+    if (err) throw err;
+    console.log('finished');
 });
-
 }
-
 
 function createWindow () {
     const win = new BrowserWindow({
