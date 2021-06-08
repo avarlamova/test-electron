@@ -1,15 +1,21 @@
 {
-  "name": "my-electron-app2",
+  "name": "test-electron-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^13.1.0"
+    "electron": "^13.1.0",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "python-shell": "^3.0.0"
   }
 }
